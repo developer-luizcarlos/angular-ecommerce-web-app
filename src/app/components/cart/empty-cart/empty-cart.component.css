@@ -1,0 +1,10 @@
+.empty-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.empty-cart > h3 {
+  color: var(--Dark-grayish-blue);
+}

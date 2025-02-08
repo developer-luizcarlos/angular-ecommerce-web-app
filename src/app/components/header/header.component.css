@@ -1,0 +1,85 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  border-bottom: 0.5px solid rgb(224, 215, 215);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 40px;
+}
+
+.header__info > img {
+  height: 20px;
+}
+
+.header__navbar {
+  display: flex;
+  align-items: stretch;
+  gap: 15px;
+  height: 100%;
+}
+
+.header__navbar > a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--Dark-grayish-blue);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.header__navbar > a::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  background-color: var(--Orange);
+  height: 3px;
+  width: 0%;
+  transition: width .4s ease;
+}
+
+.header__navbar > a:hover::after {
+  width: 100%;
+}
+
+.header__userInfo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__cartIconArea {
+  position: relative;
+}
+
+.header__cartFlag {
+  position: absolute;
+  top: calc(-100% + 5px);
+  right: calc(-100% + 12px);
+
+  background-color: var(--Orange);
+  border-radius: 5px;
+  color: var(--White);
+  font-size: 0.90rem;
+  padding: .1rem .4rem;
+}
+
+.header__userPhoto {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 60px;
+}
+
+.header__userPhoto:hover {
+  outline: 2px solid var(--Orange);
+}

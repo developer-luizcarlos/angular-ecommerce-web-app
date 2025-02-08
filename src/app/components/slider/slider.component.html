@@ -1,0 +1,10 @@
+<article class="slider">
+  <img [src]="productPhotos[photoIndex()]" [alt]="'photo ' + (photoIndex() + 1) + ' of 4'" class="slider__image">
+  <div class="slider__thumbImagesArea">
+    @for (thumb of thumbPhotos; track $index) {
+    <div [class]="$index === photoIndex() ? 'slider__thumb effect' : 'slider__thumb'" (click)="setPhotoIndex($index)">
+      <img [src]="thumb" alt="product thumb photo" class="slider__thumbImage">
+    </div>
+    }
+  </div>
+</article>

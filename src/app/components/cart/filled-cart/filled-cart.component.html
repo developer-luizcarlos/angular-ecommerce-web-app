@@ -1,0 +1,11 @@
+<div class="filled-cart">
+  <header class="filled-cart__header">
+    <img src="images/image-product-1-thumbnail.jpg" alt="product photo">
+    <div class="filled-cart__infoText">
+      <h4>Fall Limited Edition Sneakers</h4>
+      <small>$125.00 x {{productService.quantity()}} <span class="filled-cart__total">{{total()}}</span></small>
+    </div>
+    <i class="bi bi-trash" (click)="resetQuantity()"></i>
+  </header>
+  <app-primary-button text="checkout" />
+</div>

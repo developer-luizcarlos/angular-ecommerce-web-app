@@ -1,0 +1,30 @@
+.filled-cart__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.filled-cart__header > img {
+  width: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.filled-cart__infoText {
+  color: var(--Dark-grayish-blue);
+}
+
+.filled-cart__infoText > small {
+  font-size: .90rem;
+}
+
+.filled-cart__total {
+  font-weight: bold;
+  color: var(--Black);
+}
+
+.filled-cart__header > i {
+  font-size: 1.2rem;
+}
